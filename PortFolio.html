@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        html {
+        scroll-behavior: smooth;
+        }
+
+        body{
+            height: auto;
+            width: 100%;
+           background-color:   orangered;
+           padding: 4cm;
+        }
+
+        .header{
+            display: flex;
+            flex-direction: row-reverse;
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-left: 1cm;
+            /* padding-top: 0.5cm; */
+            height: 3cm;
+        }
+
+        .header a{
+            color: black;
+        }
+
+        .cc{
+            display: flex;
+            flex-direction: row-reverse;
+            padding-right: 15cm;
+            
+        }
+
+        .gh{
+            display: inline-block;
+            width: 64px;
+            height: 64px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='black' d='M8 1C4.13 1 1 4.21 1 8.18c0 3.14 1.96 5.81 4.69 6.79c.37.09.31-.17.31-.36v-1.25c-2.12.26-2.21-1.19-2.35-1.43c-.29-.5-.97-.63-.76-.87c.48-.26.98.06 1.55.93c.41.63 1.22.52 1.63.42c.09-.38.28-.71.54-.98c-2.2-.4-3.12-1.78-3.12-3.42c0-.8.25-1.53.76-2.12c-.32-.97.03-1.8.08-1.93c.91-.08 1.85.67 1.93.73c.52-.14 1.11-.22 1.77-.22s1.25.08 1.78.22c.18-.14 1.05-.78 1.9-.71c.05.12.39.94.09 1.9c.51.59.76 1.33.76 2.13c0 1.64-.92 3.02-3.13 3.42a2 2 0 0 1 .44.67c.1.25.15.52.15.79v1.81c.01.14 0 .29.23.29c2.77-.96 4.76-3.65 4.76-6.81c0-3.97-3.13-7.19-7-7.19Z'/%3E%3C/svg%3E");
+            }
+
+            .lk{
+            display: inline-block;
+            width: 64px;
+            height: 64px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='black' fill-rule='evenodd' d='M3 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm1.102 4.297a1.195 1.195 0 1 0 0-2.39a1.195 1.195 0 0 0 0 2.39m1 7.516V6.234h-2v6.579zM6.43 6.234h2v.881c.295-.462.943-1.084 2.148-1.084c1.438 0 2.219.953 2.219 2.766c0 .087.008.484.008.484v3.531h-2v-3.53c0-.485-.102-1.438-1.18-1.438c-1.079 0-1.17 1.198-1.195 1.982v2.986h-2z' clip-rule='evenodd'/%3E%3C/svg%3E");
+            }
+
+        .mail{
+            display: inline-block;
+            width: 64px;
+            height: 64px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='black' d='M15 2.5H1a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1m-1.3 1.25L8.42 8.56a.62.62 0 0 1-.84 0L2.3 3.75zm-12.45 8.5V4.48l5.49 5a1.86 1.86 0 0 0 2.52 0l5.49-5v7.77z'/%3E%3C/svg%3E");
+        }
+
+    .abt{
+        padding-top: 0.5cm;
+        height: 15cm;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .abtc{
+        text-align: justify;
+        padding-top: 0.5cm;
+        padding-bottom: 1cm ;
+        padding-left: 5cm;
+        padding-right: 5cm;
+
+    }
+
+    .edu{
+        /* background-image: url(https://www.jootoor.com/wp-content/uploads/2023/09/Orange-Gradient.jpg); */
+        padding-top: 4cm;
+        font-weight: bolder;
+        font-size: large;
+        height: 15cm;
+    }
+
+    .col{
+        font-weight: bolder;
+        padding-left: 3cm;
+    }
+
+
+    .school{
+        font-weight: bolder;
+        /* padding: 0.5cm; */
+        padding-left: 3cm;
+    }
+
+    .skills{
+        padding-top: 2cm;
+        /* background-image: url(https://www.liberatedyoga.com/img/010.jpg); */
+        background-size: cover;
+        height: 15cm;
+        color: black;
+        font-style: normal;
+        font-weight: bolder;
+        font-size: large;
+    }
+
+    .me{
+        padding-top: 2cm;
+        padding-left: 3cm;
+        display: flex;
+        flex-direction: row;
+        height: 20cm;
+        font-weight: bolder;
+        font-size: large;
+        
+    }
+    
+<<<<<<< HEAD
+    .contact{
+        height: 2cm;
+        width: 12cm;
+        padding-top: 10cm;
+        /* background-color: black; */
+        display: flex;
+        flex-direction: column;
+        color: beige;
+        font-size: large;
+    }
+
+    .cc{
+        padding-top: 1cm;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .rettop{
+        margin-top: -5cm;
+        width: 1cm;
+        padding-left: 30cm;
+        padding-top: 5cm;
+        /* background-color: ; */
+        color: black;
+    }
+
+    .a{
+        text-align: center;
+        font-weight: bolder;
+        font-size: large;
+    }
+
+    .rettop a{
+        color: black;
+        /* background-color: black; */
+    }
+
+
+    
+    
+    </style>
+</head>
+<body>
+    <div class="header" id="head">
+        <div style="padding-right: 0.5cm;"><a href="#con">CONTACT</a></div>
+        <div style="padding-right: 0.5cm;"><a href="https://vimaleshraj.github.io/PORTFOLIO/respic.png">RESUME</a></div>
+        <div style="padding-right: 0.5cm;"><a href="#ss">SKILLS</a></div>
+        <div style="padding-right: 0.5cm;"><a href="#educ">EDUCATION</a></div>
+        <div style="padding-right: 0.5cm;"><a href="#abtt">ABOUT ME</a></div>
+        <div style="padding-right: 0.5cm;"><a href="">HOME</a></div>
+    </div>
+    
+    <!-- <div class="me">
+=======
+    <body>
+        <div class="header" id="head">
+            <div style="padding-right: 0.5cm;"><a href="#con">CONTACT</a></div>
+            <div style="padding-right: 0.5cm;"><a href="https://vimaleshraj.github.io/PORTFOLIO/respic.png">RESUME</a></div>
+            <div style="padding-right: 0.5cm;"><a href="#ss">SKILLS</a></div>
+            <div style="padding-right: 0.5cm;"><a href="#educ">EDUCATION</a></div>
+            <div style="padding-right: 0.5cm;"><a href="#abtt">ABOUT ME</a></div>
+            <div style="padding-right: 0.5cm;"><a href="">HOME</a></div>
+        </div>
+>>>>>>> a458fdc0a7bca5a819e031a82d94a32ef709a60
+        
+        <div style="padding-left: 9cm; font-size: large;"><b>VIMALESH RAJ T</div><b></div>
+            
+            
+        </div>
+         -->
+        
+        
+         <div class="abt" id="abtt">
+             <div class="imgg" style="padding-top: 4cm;">
+                 <img src="C:\Users\vimal\OneDrive\Documents\GITHUB\PORTFOLIO\pic.avif" width="300px" height="300px">
+                </div>
+                <div class="abtc" style="font-size: larger;">
+            <div class="a" style="font-size: large; font-weight: bolder;"><center><h2>ABOUT ME</h2></center></div>
+            <div style="text-align: center;padding-top: 0.5cm; font-size: large; font-weight: bolder;">Im   VIMALESH RAJ </div>
+            <p><b>As a dedicated student and passionate learner, I am always eager to explore and engage with diverse technologies and domains. I am currently pursuing my undergraduate Bachelor's degree in Electronics and Communication Engineering at Sri Krishna College of Engineering and Technology. This program has provided me with a solid foundation in both theoretical knowledge and practical skills, enhancing my ability to tackle complex challenges in the field of electronics and communication.
+            My enthusiasm for learning extends beyond the classroom, as I constantly seek new opportunities to expand my knowledge and apply it in real-world scenarios. </b></p>
+
+            <p><B>I thrive in collaborative environments where I can work with others to innovate and develop cutting-edge solutions. Whether it’s through internships, projects, or team-based activities, I am always ready to embrace new experiences that broaden my understanding and expertise.</B></p>
+            <P><B>I am particularly interested in opportunities that allow me to explore and master exciting new technologies. My goal is to contribute meaningfully to any project I am a part of, while continually growing and evolving as a professional. I am open to collaborative work and eager to join teams where I can learn from others and share my own insights, driving forward the boundaries of what technology can achieve.</B></P>
+        </div>
+    </div>
+
+    <div class="edu" id="educ">
+        <h2 style="padding-top: 0.5cm; text-align: center;">EDUCATION</h2>
+        <div class="col">
+            <div style="padding-top: 0.5cm;">BE ELECTRONICS AND COMMUNNICATION ENGINEERING</div>
+            <div style="padding-left: 1cm; padding-top: 0.5cm;">Sri Krishna College Of Engineering And Technology Coimbatore TamilNadu</div>
+            <div style="padding-left: 4cm; padding-top: 0.5cm;">Currently doing 3rd year BE ECE</div>
+            <div style="padding-left: 4cm;">1st Semester : CGPA : 7.45</div>
+            <div style="padding-left: 4cm;">2nd Semester : CGPA : 7.48</div>
+            <div style="padding-left: 4cm;">3rd Semester : CGPA : 7.45</div>
+        </div>
+
+        <div class="school">
+            <div style="padding-left: 0..5cm; padding-top: 0.75cm;">SCHOOLING</div>
+            <div style="padding-left: 2cm; padding-top: 0.5cm;">Sree Baldevdas Kikani Vidya Mandir Matriculation Higher Secondary School</div>
+            <div style="padding-left: 2cm; padding-top: 0.5cm;">HSC : </div>
+            <div style="padding-left: 4cm;">Completed 12th grade with 87.17% in TN
+                Board Examination with major subjects Physics , Chemistry and Mathematics</div>
+
+                <div style="padding-left: 2cm; top: 0.5cm; padding-top: 0.5cm;">SSLC : </div>
+                <div style="padding-left: 4cm;">Completed 10th grade with 78.4% in TN
+                    Board Examination</div>
+        </div>
+    </div>
+
+    <div class="skills" id="ss">
+        <div style="font-weight: bolder;"><center><h2>SKILLS</STRONG></h2></div><BR>
+        <div style="padding-left: 14cm;"><b>PROGRAMMING LANGUAGES</b></div>
+        <div style="padding-left: 15cm;">
+            <ul style="">
+                <li>JAVA</li>
+                <li>C++</li>
+                <li>MYSQL</li>
+                <li>HTML</li>
+            </ul>
+        </div>
+
+        <div style="padding-left: 14cm; padding-top: 0.5cm;"><b>SOFTWARE</b></div>
+        <div style="padding-left: 15cm;">
+            <ul>
+                <li>BLENDER</li>
+            </ul>
+        </div>
+
+        <div style="padding-left: 14cm; padding-top: 0.5cm;"><b>QUALITIES</b></div>
+        <div style="padding-left: 15cm;">
+            <ul>
+                <li>LEADERSHIP</li>
+                <li>COMMUNICATION</li>
+                <li>PATIENCE</li>
+                <li>PLANNING</li>
+                <li>PROBLEM SOLVING</li>
+                <li>MANAGEMENT</li>
+                <li>ORGANIZATION</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="contact" id="con">
+        <div style="color: black; font-size: large; font-weight: bolder;">CONTACT</div>
+        <div class="cc">
+        <div style="padding-left: 0.5cm;"><a href="https://github.com/VimaleshRaj"><button class="gh"></button></a></div>
+        <div style="padding-left: 0.5cm;"><a href="https://www.linkedin.com/in/vimalesh-raj-thangavelu-ab3534258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><button class="lk"></button></a></div>
+        <div style="padding-left: 0.5cm;"><a href="https://www.linkedin.com/in/vimalesh-raj-thangavelu-ab3534258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><button class="mail"></button></a></div>
+      </div>
+    </div>
+
+      <div class="rettop">
+        <div><button style="width: 3cm; color: black;"><a href="#head">VIEW HOME PAGE</a></button></div>
+      </div>
+</body>
+</html>
